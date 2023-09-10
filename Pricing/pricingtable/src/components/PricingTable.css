@@ -1,0 +1,159 @@
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  .pricing-plan {
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .pricing-plan-2 {
+    background-color: #f0f0f0;
+    padding: 30%;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pricing-plan h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .pricing-plan p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .price {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+    span {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .btn {
+    align-items: center;
+    color: rgb(17, 16, 16);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .btn button:hover {
+    transition: 0.5s;
+    background-color: #deeaf0;
+  }
+  
+  .btn-basic {
+    position: relative;
+    top: 7.5%;
+  }
+
+  .recommended {
+    background-color: #7ddaa1;
+    color: white;
+  }
+  
+
+  /* toggle button */ 
+
+  .toggle-container {
+    width: 50px;
+    height: 30px;
+    background-color: #ccc;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+  }
+  
+  .toggle-container.checked {
+    background-color: #84929c;
+  }
+  
+  .toggle-slider {
+    width: 30px;
+    height: 30px;
+    background-color: #2eb8b8;
+    position: absolute;
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+    transition: left 0.3s;
+  }
+  
+  .toggle-container.checked .toggle-slider {
+    left: 20px;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* MOST POPULAR */
+
+ /* Seu arquivo CSS */
+.popular {
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #2eb8b8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 20px; /* Aumentando o raio para dar a aparência de um selo */
+  position: absolute;
+  top: 20%;
+  overflow: hidden;
+}
+
+.popular::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  width: 40px;
+  height: 40px;
+  background-color: #a59491;
+  transform: rotate(-45deg);
+  border-top-right-radius: 50%;
+}
